@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft 2D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-page">
+
+  <div class="landing-sky">
+    <div class="sun"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+  </div>
+
+  <main class="landing">
+    <h1 class="logo">MINECRAFT <span>2D</span></h1>
+    <p class="subtitle">Chop trees. Mine rocks. Dig dirt. Build your world.</p>
+
+    <a class="btn btn-play" href="game.html">&#9654; Play</a>
+
+    <section class="how panel">
+      <h2 class="panel-title">How to play</h2>
+
+      <div class="tools-help">
+        <div class="help-card">
+          <img src="images/axe.png" alt="Axe">
+          <h3>Axe</h3>
+          <p>Removes <strong>trees</strong></p>
+          <div class="mini tile-tree"></div>
+        </div>
+        <div class="help-card">
+          <img src="images/pickaxe.png" alt="Pickaxe">
+          <h3>Pickaxe</h3>
+          <p>Removes <strong>rocks</strong></p>
+          <div class="mini tile-stone"></div>
+        </div>
+        <div class="help-card">
+          <img src="images/shovel.png" alt="Shovel">
+          <h3>Shovel</h3>
+          <p>Removes <strong>dirt</strong></p>
+          <div class="mini tile-dirt"></div>
+        </div>
+      </div>
+
+      <ol class="steps">
+        <li><span class="num">1</span> Click a tool in the toolbar. It lights up.</li>
+        <li><span class="num">2</span> Click a block in the world.</li>
+        <li><span class="num">3</span> Right tool for the block? It disappears!</li>
+        <li><span class="num">4</span> The block lands in your inventory.</li>
+        <li><span class="num">5</span> Click an inventory block to place it back.</li>
+      </ol>
+
+      <p class="tip">Stuck? Press <strong>Reset World</strong> to start over.</p>
+    </section>
+  </main>
+
+  <div class="landing-ground"></div>
+</body>
+</html>

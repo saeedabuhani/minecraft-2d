@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft 2D – העולם</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page">
+
+  <header class="topbar">
+    <a class="back-link" href="index.html">&larr; Home</a>
+    <h1 class="logo logo-small">MINECRAFT <span>2D</span></h1>
+    <button id="reset-btn" class="btn btn-reset" type="button">&#8635; Reset World</button>
+  </header>
+
+  <main class="game">
+
+    <aside id="toolbar" class="toolbar panel">
+      <h2 class="panel-title">Tools</h2>
+      <button class="tool" id="tool-axe" data-tool="axe" data-removes="tree" type="button">
+        <img src="images/axe.png" alt="">
+        <span class="tool-name">Axe</span>
+        <span class="tool-hint">Trees</span>
+      </button>
+      <button class="tool" id="tool-pickaxe" data-tool="pickaxe" data-removes="rock" type="button">
+        <img src="images/pickaxe.png" alt="">
+        <span class="tool-name">Pickaxe</span>
+        <span class="tool-hint">Rocks</span>
+      </button>
+      <button class="tool" id="tool-shovel" data-tool="shovel" data-removes="dirt" type="button">
+        <img src="images/shovel.png" alt="">
+        <span class="tool-name">Shovel</span>
+        <span class="tool-hint">Dirt</span>
+      </button>
+    </aside>
+
+    <section class="world-wrap">
+      <div id="world" class="world" style="--cols:20; --rows:12;">
+        <div class="sky">
+          <div class="sun"></div>
+          <div class="cloud cloud-1"></div>
+          <div class="cloud cloud-2"></div>
+          <div class="cloud cloud-3"></div>
+        </div>
+        <div id="tiles" class="tiles">
+        </div>
+      </div>
+      <div id="inventory" class="inventory panel">
+        <h2 class="panel-title">Inventory</h2>
+        <div class="slots">
+          <div class="slot empty" data-type="tree"><div class="slot-icon tile-tree"></div><span class="count">0</span></div>
+          <div class="slot empty" data-type="leaves"><div class="slot-icon tile-leaves"></div><span class="count">0</span></div>
+          <div class="slot empty" data-type="cactus"><div class="slot-icon tile-cactus"></div><span class="count">0</span></div>
+          <div class="slot empty" data-type="stone"><div class="slot-icon tile-stone"></div><span class="count">0</span></div>
+          <div class="slot empty" data-type="coal"><div class="slot-icon tile-coal"></div><span class="count">0</span></div>
+          <div class="slot empty" data-type="iron"><div class="slot-icon tile-iron"></div><span class="count">0</span></div>
+          <div class="slot empty" data-type="dirt"><div class="slot-icon tile-dirt"></div><span class="count">0</span></div>
+          <div class="slot empty" data-type="grass"><div class="slot-icon tile-grass"></div><span class="count">0</span></div>
+          <div class="slot empty" data-type="sand"><div class="slot-icon tile-sand"></div><span class="count">0</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
