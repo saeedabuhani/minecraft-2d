@@ -4,6 +4,16 @@ A 2D Minecraft-style sandbox game built with plain **HTML, CSS and JavaScript** 
 
 Chop trees, mine rocks, dig dirt, collect the blocks in your inventory and build your world back.
 
+![HTML](https://img.shields.io/badge/HTML5-e34f26)
+![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-f7df1e)
+![No dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
+
+### [▶ Live Demo](https://minecraft-2d-881.netlify.app)
+
+| | |
+|---|---|
+| ![Landing page](docs/screenshots/01-landing.png) | ![The game](docs/screenshots/02-game.png) |
+
 ## How to play
 
 1. Open `index.html` and press **Play**.
@@ -54,6 +64,31 @@ No build step. Open `index.html` in a browser, or serve the folder:
 ```bash
 npx serve .
 ```
+
+## Architecture
+
+```mermaid
+flowchart LR
+  L[index.html: rules] --> G[game.html]
+  G --> S[script.js: Game object]
+  S --> W[(2D tile array)]
+  S --> I[Inventory + tool rules]
+  G --> C[style.css]
+```
+
+## Tests
+
+No automated tests. Checked with Playwright on the live site: both pages load with no console errors or failed requests at 1440 px and 375 px.
+
+## Security notes
+
+Static files only, no network calls and no secrets.
+
+## Roadmap
+
+- Touch controls tuned for phones.
+- Save and load the world.
+- Crafting.
 
 ## Disclaimer
 
