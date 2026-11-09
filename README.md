@@ -97,3 +97,5 @@ Educational project, not affiliated with Mojang or Microsoft. Minecraft is a tra
 ## Author
 
 **Saeed Abuhani**: [github.com/saeedabuhani](https://github.com/saeedabuhani)
+
+© 2026 Saeed Abuhani – All rights reserved
